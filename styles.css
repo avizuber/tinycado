@@ -1,0 +1,83 @@
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome-section,
+.gallery-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.welcome-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tagline {
+  margin-bottom: 20px;
+}
+
+.masonic-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  min-width: 200px;
+  max-width: 500px;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Darken effect */
+}
+
+.card h3,
+.card p {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.go-button {
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 48px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-image: linear-gradient(to right, #6a1b9a, #6200ee);
+  transition: background-position 0.5s, background-image 0.5s;
+  background-size: 200% 100%;
+  background-position: 99% 0%;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.go-button:hover {
+  background-image: linear-gradient(to left, #6a1b9a, #6200ee);
+  background-position: 0% 0%;
+}
+
+@media (max-width: 600px) {
+  .masonic-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
